@@ -1,0 +1,519 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/* font-family: 'Bebas Neue', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+body {
+    background-color: rgb(43, 42, 42);
+    color: white;
+    height: 100vh;
+}
+
+
+header {
+    background: transparent;
+    width: 100%;
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+    padding: 15px 130px;
+    align-items: center;
+    align-self: flex-start;
+    position: relative;
+
+}
+
+.navigation .logo {
+    color: rgb(238, 19, 19);
+    font-size: 48px;
+    align-items: flex-start;
+    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 3px;
+    left: 12%;
+    position: absolute;
+    top: 20px;
+}
+
+.navigation .nav-content {
+    display: flex;
+    position: absolute;
+    right: 12%;
+    top: 20px;
+}
+
+
+
+.navigation .nav-content .language {
+    padding: 6px 8px;
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 5px;
+    align-items: center;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.navigation .nav-content .language span {
+    margin-left: 5px;
+    margin-right: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.navigation .nav-content .language i {
+    font-size: 16px;
+}
+
+.navigation .nav-content button {
+    padding: 8px 16px;
+    background-color: rgb(212, 13, 13);
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 10px hsl(0, 0%, 0%), .6;
+    transition: transform  .3s ease;
+}
+
+
+.navigation .nav-content button a {
+    color: white;
+    font-size: 15px;
+    text-transform: lowercase;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.navigation .nav-content button:hover {
+    background-color: rgb(156, 11, 11);
+    cursor: pointer;
+    transition: all .5s ease-out;
+}
+
+.active.bxs-chevron-down {
+    transform: rotate(-180deg);
+}
+
+.navigation .nav-content .submenu {
+    display: none;
+}
+
+.navigation .nav-content .bx:hover .submenu {
+    display: block;
+    position: absolute;
+    background-color: rgb(245, 245, 245, .9);
+    top: 20px;
+    left: 0px;
+}
+
+.navigation .nav-content .bx:hover {
+    cursor: pointer;
+}
+
+
+.navigation .nav-content .bx:hover .submenu ul li {
+    width: 130px;
+    list-style: none;
+    transition: all 2s ease;
+    padding: 5px 0px;
+    border-bottom: 1px solid black;
+    border-radius: 2px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.navigation .nav-content .bx:hover .submenu ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.navigation .nav-content .bx:hover .submenu ul li a:hover {
+    color: blue;
+}
+
+
+.main-container {
+    background: radial-gradient(rgb(0, 0, 0,.7),rgb(0, 0, 0,.5)), url(./images/netflix.jpg);
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.main-img-content {
+    margin: 10px 50px;
+    margin-top: 200px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.img-content {
+    text-align: center;
+    margin: 10px 50px;
+    padding: 10px 20px;
+}
+
+.img-content h1 {
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+
+.img-content p {
+    font-size: 22px;
+    font-family: sans-serif;
+    padding: 5px;
+    margin: 10px 20px;
+    letter-spacing: 1px;
+}
+
+.img-content .email-box .input .email-input {
+    margin: 0px 200px;
+}
+
+
+.img-content .email-box .input .email-bx {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.email-bx input {
+    width: 500px;
+    height: 60px;
+    border-radius: 5px;
+    padding: 10px 8px;
+    border: none;
+    background-color: rgb(102, 99, 99, .5);
+    color: rgb(230, 227, 224);
+    font-size: 25px;
+    box-shadow: .2px .2px 0px .5px white;
+
+}
+
+
+.email-box button {
+    margin-left: 8px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: rgb(218, 21, 21);
+    border: none;
+    box-shadow: 2px 2px 5px black;
+    outline: none;
+    display: flex;
+    align-items: center;
+    transition: transform  .3s ease;
+}
+
+.email-bx button:hover {
+    cursor: pointer;
+    background-color: rgb(143, 19, 19);
+    transform: scale(1.02);
+    transition: all .3s ease;
+}
+
+.email-box button a {
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    margin: 4px;
+    color: white;
+}
+
+.email-box button i {
+    text-align: center;
+    padding: 2px;
+    font-size: 30px;
+    color: white;
+
+}
+
+.sec1-container {
+    background-color: black;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    padding: 50px 150px;
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+}
+
+.section1 .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.section1 .left h1 {
+    font-size: 47px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section1 .left .para {
+    width: 100%;
+    text-align: center;
+}
+
+.section1 .left .para p {
+    font-size: 28px;
+    text-align: start;
+    vertical-align: inherit;
+    font-family: sans-serif;
+}
+
+.section1 .right {
+    width: 50%;
+}
+
+
+.section1 .right img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.sec1-container .quest-container {
+    width: 100%;
+    padding: 5px;
+}
+
+.sec1-container .quest-container h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+
+.quest-container .queries {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px black;
+}
+
+.quest-container .queries .questions {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(43, 42, 42);
+    padding: 25px 20px;
+    margin-top: 15px;
+    border-radius: 3px;
+    align-items: center;
+}
+
+.quest-container .queries .questions h2 {
+    font-size: 28px;
+    font-family: 'Lato', sans-serif;
+}
+
+.quest-container .queries .questions i {
+    font-size: 50px;
+    color: white;
+}
+
+.quest-container .queries .questions i:hover {
+    transform: rotate(180deg);
+}
+
+.answer {
+    display: none;
+}
+
+.quest-container .queries .answer {
+    background-color: rgb(136, 129, 129);
+    padding: 30px 20px;
+}
+
+.quest-container .queries .answer p {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+
+
+.m-upper {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.m-upper .mm-upper {
+    margin: 0px 30px;
+}
+
+.m-upper .mm-upper .mmm-upper {
+    margin: 0px 30px;
+}
+
+
+.mmm-upper .bottom-heading {
+    text-align: center;
+    padding: 15px 30px;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+.mmm-upper .input {
+    margin: 10px 10%;
+}
+
+.mmm-upper .input .email-bx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mmm-upper .input .email-bx .email input {
+    box-shadow: .2px .2px 0px .5px white;
+    background-color: black;
+    width: 500px;
+    border-radius: 1px;
+}
+
+
+.mmm-upper .input .email-bx button {
+    margin-left: 10px;
+    padding: 15px 20px;
+    background-color: rgb(247, 34, 34);
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    box-shadow: .2px .2px 0px .5px rgb(20, 20, 20);
+}
+
+.mmm-upper .input .email-bx button:hover {
+    background-color: rgb(167, 9, 9);
+}
+
+
+
+
+.mmm-upper .input .email-bx button a {
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.mmm-upper .input .email-bx button i {
+    margin-left: 2px;
+    font-size: 30px;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.footer .call {
+    padding: 20px 0px;
+}
+
+.footer .call span {
+    color: rgb(202, 198, 198);
+    font-size: 16px;
+    padding: 5px;
+    border-bottom: .2px solid rgb(194, 192, 192);
+}
+
+.footer .call span:hover {
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+
+.faqs {
+    padding: 10px 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.faqs .item {
+    color: rgb(202, 198, 198);
+}
+
+.faqs .item p {
+    border-bottom: .2px solid white;
+    display: inline-block;
+}
+
+
+.faqs .item p:hover {
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.lang-footer .language2 {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-shadow: .2px .2px 0px .5px white;
+}
+
+.lang-footer .language2 span {
+    margin: 0px 5px;
+    font-family: sans-serif;
+}
+
+
+@media only screen and (min-width:220px) and (max-width:790px){
+
+
+    .main-container{
+        width: 100%;
+    }
+    header .navigation .logo{
+        font-size: 20px;
+    }
+
+    .sec1-container{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .section1{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .email-input .email-bx{
+        flex-direction: column;
+    }
+
+    .img-content{
+        width: 100%;
+    }
+
+    .img-content h1{
+        font-size: 30px;
+    }
+} 
